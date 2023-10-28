@@ -6,8 +6,8 @@ A parallel implementation of the [Finite Difference Method (FDM)](https://en.wik
 ## Setup
 ### Downloading the repository
 ```sh
-$ git clone https://github.com/Thefantasticbagle/pthreads-advection-solver.git
-$ cd pthreads-advection-solver
+$ git clone https://github.com/Thefantasticbagle/pthreads-diffusion-solver.git
+$ cd pthreads-diffusion-solver
 ```
 
 ### Installing dependencies
