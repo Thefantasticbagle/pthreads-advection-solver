@@ -1,13 +1,13 @@
 # pthreads-diffusion-solver
 A parallel implementation of the [Finite Difference Method (FDM)](https://en.wikipedia.org/wiki/Finite_difference_method) for solving the 2D heat problem, made using [Pthreads](https://en.wikipedia.org/wiki/Pthreads) in [C](https://en.wikipedia.org/wiki/C_(programming_language)).
 
-![The diffusion solver in action]()
+![The diffusion solver in action](https://github.com/Thefantasticbagle/pthreads-advection-solver/blob/5a2f9e8b80a58433ce2dff2cd0d2ca0ab73b5a32/example_animation.gif)
 
 ## Setup
 ### Downloading the repository
 ```sh
-$ git clone X
-$ cd X
+$ git clone https://github.com/Thefantasticbagle/pthreads-advection-solver.git
+$ cd pthreads-advection-solver
 ```
 
 ### Installing dependencies
