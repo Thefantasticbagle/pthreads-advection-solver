@@ -1,8 +1,8 @@
 /**
- * A solver for the Advection Problem using pthreads.
- * https://en.wikipedia.org/wiki/Advection
+ * A solver for the diffusion Problem using pthreads.
+ * https://en.wikipedia.org/wiki/Diffusion_equation
  * 
- * @file advection_solver.c
+ * @file diffusion_solver.c
  * @author Lars L Ruud
 */
 
@@ -49,7 +49,6 @@ real_t
 void* run_simulation ( void* rank );
 void time_step ( int_t subgrid_width, int_t subgrid_x0 );
 void boundary_condition ( long rank_long, int_t subgrid_width, int_t subgrid_x0 );
-void border_exchange( void );
 void domain_init_global ( void );
 void domain_init ( int_t subgrid_width, int_t subgrid_x0 );
 void domain_save ( int_t iteration );

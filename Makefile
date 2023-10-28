@@ -1,4 +1,4 @@
-PROGNAME:=advection_solver
+PROGNAME:=diffusion_solver
 
 DATADIR:=data/
 PLOTSDIR:=plots/
@@ -16,18 +16,18 @@ SRC:=src/$(PROGNAME).c src/utils.c
 
 .PHONY: clean purge setup video
 
-advection_solver: $(SRC)
+diffusion_solver: $(SRC)
 	$(CC) $^ $(CFLAGS) $(LDLIBS) -o $@
 
 clean:
-	-rm -f advection_solver
+	-rm -f diffusion_solver
 
 purge:
-	-rm -f advection_solver $(DATA) $(PLOTS) $(VIDEO)
+	-rm -f diffusion_solver $(DATA) $(PLOTS) $(VIDEO)
 
 setup:
 	-mkdir -p data plots video
 
 video:
 	./plot.sh > /dev/null
-	ffmpeg -y -i $(PLOTSDIR)%5d.png -vf format=yuv420p $(VIDEODIR)animation.mp4 &> /dev/null
+	ffmpeg -y -i $(PLOTSDIR)%5d.png -vf format=yuv420p $(VIDEODIR)animation.gif &> /dev/null
